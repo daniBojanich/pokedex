@@ -1,0 +1,85 @@
+.pokemones {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 250px);
+  justify-content: center;
+}
+.pantalla {
+  height: var(--alturaPantallas);
+}
+.ash {
+  margin-inline: 50px;
+}
+ul {
+  list-style: none;
+}
+
+.listaPokemones {
+  width: 60%;
+  overflow: auto;
+}
+.pagina-pokemones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+& h1{
+  font-size: 50px;
+}
+}
+
+.titulo {
+  font-size: 50px;
+}
+
+.sector {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.card-pokemones {
+  height: 150px;
+  width: 150px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+  background-color: rgb(233 234 242);
+  align-content: center;
+  align-items: center;
+  border: 1px solid rgb(43, 39, 48);
+  border-radius: 3px;
+  & button {
+    cursor: pointer;
+    background-color: #ffd300;
+    margin: 10px;
+    margin-bottom: 0px;
+    padding: 3px;
+    border-radius: 3px;
+    font-size: 15px;
+  }
+}
+
+.divCardClick{
+  width: 150px;
+}
+
+li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.botonFavorito{
+  position: relative;
+  z-index: 3;
+  background-color: #ffd300;
+  margin: 10px;
+  margin-bottom: 0px;
+  padding: 3px;
+  border-radius: 3px;
+  font-size: 15px;
+}

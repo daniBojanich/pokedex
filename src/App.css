@@ -1,0 +1,32 @@
+#root {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  --altura60: 60px;
+  --alturaPantallas: calc(100vh - (var(--altura60) * 2));
+  --rojoPokemon: #cc0000;
+  --azulPokemon: #3b4cca;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexCentrado{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexVertical{
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: center;
+}
+
+.fondogris{
+  background-color: #ecf0ec;
+}

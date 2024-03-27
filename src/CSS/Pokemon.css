@@ -1,0 +1,92 @@
+.type {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.paginaPokemon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ItemPokemon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    justify-content: space-around;
+  position: relative;
+  z-index: 1;
+  height: 350px;
+  width: 300px;
+  background-color: #c6e3ed;
+& h2{
+  font-size: 40px;
+}
+& h3{
+  font-size: 25px;
+}
+}
+.BordesPixelados {
+  border: solid black;
+  border-radius: 5px;
+  box-shadow: -4px 0 0 -2px black, /*Left inner shadow */ -8px 0 0 -4px black, /* Leftmost shadow */ 4px 0 0 -2px black,
+    /* Right inner shadow */ 8px 0 0 -4px black; /* Rightmost shadow */
+}
+.reflejos {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+}
+.fondoAzul {
+  background-color: #edefcc;
+}
+.pixelated {
+  image-rendering: pixelated;
+}
+.textoDesc {
+  width: 400px;
+  border: 3px black;
+  border-radius: 15px;
+  border-style: double;
+  margin: 25px;
+  padding: 25px;
+  background:#ecf0ec;
+  font-size: 25px;
+}
+
+.TarjetaFavoritos {
+  background-color: rgb(233 234 242);
+  height: 150px;
+  width: 120px;
+  border: 1px solid rgb(43, 39, 48);
+  border-radius: 3px;
+  margin: 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  & img {
+    height: 75px;
+  }
+  & button {
+    cursor: pointer;
+    background-color: #ffd300;
+    margin: 10px;
+    margin-bottom: 0px;
+    padding: 3px;
+    border-radius: 3px;
+    font-size: 20px;
+    &:hover {
+      background-color: var(--rojoPokemon);
+      color: #fff;
+    }
+  }
+  & li{
+    font-size: 25px;
+  }
+}
